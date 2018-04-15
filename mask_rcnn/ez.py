@@ -6,6 +6,7 @@ import numpy as np
 import skimage.io
 import matplotlib
 import matplotlib.pyplot as plt
+import rospy
 
 from . import coco
 from . import utils
@@ -49,6 +50,9 @@ class EZ():
         self.class_colors = visualize.random_colors(len(self.class_names))
 
     def serve(self, service_name):
+
+        rospy.init_node(serve)
+        s = rospy.Service(service_name, self.class, self.detect())
         """
         description: this function will start this vision
         system as a ros node, listen to channels and serve
@@ -60,7 +64,6 @@ class EZ():
         output:
             none (this function will run forever)
         """
-        pass
 
     def req_handler(self, req):
         """
