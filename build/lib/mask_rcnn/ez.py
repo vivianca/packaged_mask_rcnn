@@ -52,7 +52,7 @@ class EZ():
     def serve(self, service_name):
 
         rospy.init_node('serve')
-        s = rospy.Service(service_name, self.__class__, req_handler(self))
+        s = rospy.Service(service_name, self.class, req_handler())
         """
         description: this function will start this vision
         system as a ros node, listen to channels and serve
@@ -66,8 +66,6 @@ class EZ():
         """
 
     def req_handler(self, req):
-
-        self.detect(self, )
         """
         description: this function is a thin wrapper around
         self.detect and will be used in self.serve
@@ -78,6 +76,7 @@ class EZ():
         outputs:
             res: response to the request
         """
+        pass
 
     def detect(self, image_input, merge_image=True):
         sample_image = image_input

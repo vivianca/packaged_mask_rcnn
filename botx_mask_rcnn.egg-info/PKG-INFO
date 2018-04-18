@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: botx-mask-rcnn
+Version: 0.0.1
+Summary: packaged mask rcnn for botx project usage
+Home-page: https://superbotx.github.io/packaged_mask_rcnn/
+Author: UNKNOWN
+Author-email: tyan_chiau@berkeley.edu
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
